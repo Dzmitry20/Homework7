@@ -9,11 +9,11 @@ public class Main {
 
         System.out.println("тип List :");
 
-        Person person1 = new Person("Andrey","Rof");
-        Person person2 = new Person("Sergey","Azz");
-        Person person3 = new Person("Vika","Cop");
-        Person person4 = new Person("Dik","Hok");
-        Person person5 = new Person("Rita","Zpp");
+        Person person1 = new Person("Andrey","Rof", Gender.MALE);
+        Person person2 = new Person("Sergey","Azz", Gender.MALE);
+        Person person3 = new Person("Vik","Cop", Gender.FEMALE);
+        Person person4 = new Person("Dik","Hok", Gender.MALE);
+        Person person5 = new Person("Rita","Zpp", Gender.FEMALE);
 
         List<Person> list = new ArrayList<>();
         list.add(person1);
@@ -32,11 +32,11 @@ public class Main {
 
         System.out.println("тип Set : ");
 
-        Person person6 = new Person("Vitaliy","Ntt");
-        Person person7 = new Person("Sonya","Lis");
-        Person person8 = new Person("Nick","Sob");
-        Person person9 = new Person("Sonya","Lis");
-        Person person10 = new Person("Vitaliy","Ntt");
+        Person person6 = new Person("Vitaliy","Ntt", Gender.MALE);
+        Person person7 = new Person("Sonya","Lis", Gender.FEMALE);
+        Person person8 = new Person("Nick","Sob", Gender.MALE);
+        Person person9 = new Person("Sonya","Lis", Gender.FEMALE);
+        Person person10 = new Person("Vitaliy","Ntt", Gender.MALE);
 
         Set<Person> set = new HashSet<>();
         set.add(person6);
@@ -54,11 +54,11 @@ public class Main {
 
         System.out.println("тип Map : ");
 
-        Person person11 = new Person("Jack", "Ntt");
-        Person person12 = new Person("Sonya", "Lis");
-        Person person13 = new Person("Nick", "Sob");
-        Person person14 = new Person("Bob", "Noq");
-        Person person15 = new Person("Sam", "Vud");
+        Person person11 = new Person("Jack", "Ntt", Gender.MALE);
+        Person person12 = new Person("Sonya", "Lis", Gender.FEMALE);
+        Person person13 = new Person("Nick", "Sob", Gender.MALE);
+        Person person14 = new Person("Bob", "Noq", Gender.MALE);
+        Person person15 = new Person("Sam", "Vud", Gender.MALE);
 
         Map<Integer,Person> map = new HashMap<>();
 

@@ -5,20 +5,11 @@ public final class Person {
     private final String lastName ;
     private final Gender gender;
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.gender = ChooseGender();
+        this.gender = gender;
     }
-
-    private Gender ChooseGender() {
-
-        if (firstName.equals("Vika") || firstName.equals("Rita") || firstName.equals("Sonya"))  {
-            return Gender.FEMALE;}
-
-         return Gender.MALE;
-
-        }
 
     @Override
     public int hashCode() {
