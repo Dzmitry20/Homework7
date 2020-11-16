@@ -13,7 +13,7 @@ public final class Person {
 
     @Override
     public int hashCode() {
-        return  12 * firstName.hashCode() + 14 * lastName.hashCode();
+        return  12 * firstName.hashCode() + 13 * lastName.hashCode() + 7 * gender.hashCode();
     }
 
     @Override
@@ -34,7 +34,7 @@ public final class Person {
         if (!( obj instanceof  Person)) {
             return  false;}
         Person person = (Person)obj;
-        return  firstName.equals(person.firstName)  && lastName.equals(person.lastName);
+        return  firstName.equals(person.firstName)  && lastName.equals(person.lastName) && gender.equals(person.gender);
 
         }
     }
